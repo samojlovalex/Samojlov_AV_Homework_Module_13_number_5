@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Samojlov_AV_Homework_Module_13_number_5</string>
+
+    <string name="toolbar_title">База данных</string>
+    <string name="toolbar_subtitle">Mod. 13 № 5</string>
+    <string name="exit">Exit</string>
+    <string name="toast_exit">Приложение закрыто</string>
+
+    <string name="textViewMainTV_Text">База данных</string>
+    <string name="startButtonBT_Text">Начать</string>
+    <string name="nameET_Hint">Имя</string>
+    <string name="phoneET_Hint">Телефон</string>
+    <string name="saveBT_Text">Сохранить данные</string>
+    <string name="getBT_Text">Получить данные</string>
+    <string name="clearBT_Text">Удалить данные</string>
+    <string name="nameTV_Text">Имя</string>
+    <string name="postTV_Text">Должность</string>
+    <string name="phoneTV_Text">Телефон</string>
+    <string name="BDTV_Text">\n\n</string>
+    <string name="addName_Toast">%1$s добавлен в базу данных</string>
+    <string name="post_first_item">Должность</string>
+    <string name="poct_clear_text" />
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SecondActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerToolbarSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_gridview_item"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Blue"
+                app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Small"
+                app:subtitleTextColor="@color/white"
+                app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:titleTextColor="@color/white">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerEditTextSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_gridview_item"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerToolbarSecond">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Milk"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nameET_Hint"
+                android:minHeight="@dimen/minHeight_EditText_Second"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Grey"
+                android:textSize="@dimen/textSize_EditText_Second"></EditText>
+
+            <Spinner
+                android:id="@+id/postSP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/minHeight_EditText_Second"
+                android:textAlignment="textStart"></Spinner>
+
+            <EditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phoneET_Hint"
+                android:inputType="phone"
+                android:minHeight="@dimen/minHeight_EditText_Second"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Grey"
+                android:textSize="@dimen/textSize_EditText_Second"></EditText>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerButtonSecond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_gridview_item"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerEditTextSecond">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Milk"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Button_Second"
+                android:layout_weight="1"
+                android:backgroundTint="@color/Blue"
+                android:text="@string/saveBT_Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_Button_Second"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/getBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Button_Second"
+                android:layout_weight="1"
+                android:backgroundTint="@color/Blue"
+                android:text="@string/getBT_Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_Button_Second"
+                android:textStyle="bold"></Button>
+
+            <Button
+                android:id="@+id/clearBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_Button_Second"
+                android:layout_weight="1"
+                android:backgroundTint="@color/Blue"
+                android:text="@string/clearBT_Text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_Button_Second"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerTextVieWSecond"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_width"
+        android:layout_margin="@dimen/margin_gridview_item"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerButtonSecond">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Milk"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_TextView_Second"
+                        android:text="@string/nameTV_Text"
+                        android:textAlignment="center"
+                        android:textColor="@color/Blue"
+                        android:textSize="@dimen/textSize_TextViewBD_Second"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/postTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_TextView_Second"
+                        android:text="@string/postTV_Text"
+                        android:textAlignment="center"
+                        android:textColor="@color/Blue"
+                        android:textSize="@dimen/textSize_TextViewBD_Second"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/phoneTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_TextView_Second"
+                        android:text="@string/phoneTV_Text"
+                        android:textAlignment="center"
+                        android:textColor="@color/Blue"
+                        android:textSize="@dimen/textSize_TextViewBD_Second"
+                        android:textStyle="bold"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nameBDTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_TextView_Second"
+                        android:text="@string/BDTV_Text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_TextViewBD_Second"
+                        tools:ignore="SpeakableTextPresentCheck"></TextView>
+
+                    <TextView
+                        android:id="@+id/postBDTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_TextView_Second"
+                        android:text="@string/BDTV_Text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_TextViewBD_Second"
+                        tools:ignore="SpeakableTextPresentCheck"></TextView>
+
+                    <TextView
+                        android:id="@+id/phoneBDTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/padding_TextView_Second"
+                        android:text="@string/BDTV_Text"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize_TextViewBD_Second"
+                        tools:ignore="SpeakableTextPresentCheck"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
